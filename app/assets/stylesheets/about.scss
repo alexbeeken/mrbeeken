@@ -1,0 +1,54 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.headshot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain ;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.text, .title, .videos-message, .support-message, .feed {
+  font-family: 'Oswald';
+}
+
+.videos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .video {
+    max-height: 500px;
+    margin-bottom: 40px;
+    margin: 10px;
+  }
+  iframe {
+
+  }
+}
+
+.videos-message {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.post {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+.post-body p {
+  font-size: 18px !important;
+}
+.post-date p {
+  font-size: 13px !important;
+}
