@@ -1,9 +1,5 @@
 <header id="header" class="row" data-hook>
-  <figure id="logo" class="columns six" data-hook>
-    <section class='banner'>
-      <%= render partial: 'svg/logo' %>
-    </section>
-  </figure>
-  <%= render partial: 'spree/shared/nav_bar' %>
+  <%= render 'layouts/nav_menu' %>
+  <%= render 'layouts/flash', flash: flash %>
   <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
 </header>

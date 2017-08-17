@@ -1,13 +1,12 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
     <div class="nav-header">
       <div class="banner">
         <%= render partial: 'svg/logo' %>
       </div>
     </div>
     <nav>
-      <section class='mrb-navbar'>
-        <section class='nav-links'>
+      <section class='nav-links'>
+        <section class='nav-mover'>
           <%= render 'layouts/nav_link', path: '/news', icon: 'fa fa-newspaper-o', text: 'news', controller: 'about', action: 'news' %>
           <%= render 'layouts/nav_link', path: '/videos', icon: 'fa fa-video-camera', text: 'videos', controller: 'about', action: 'videos' %>
           <%= render 'layouts/nav_link', path: '/store', icon: 'fa fa-star', text: 'store', controller: 'products', action: 'index' %>
@@ -16,5 +15,4 @@
         </section>
       </section>
     </nav>
-  </div>
 </nav>

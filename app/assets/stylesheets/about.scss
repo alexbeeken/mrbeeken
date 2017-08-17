@@ -13,8 +13,17 @@
   }
 }
 
+.jumbotron {
+  padding: 30px;
+}
+
 .title {
+  font-size: 50px;
   text-align: center;
+}
+
+.text {
+  font-size: 21px;
 }
 
 .text, .title, .videos-message, .support-message, .feed {

@@ -12,6 +12,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_gateway'
 gem 'solidus_braintree'
+gem 'font-awesome-rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
