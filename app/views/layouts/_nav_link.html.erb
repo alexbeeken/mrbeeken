@@ -2,20 +2,20 @@
   <%= link_to path do %>
     <% if (action_name == action) || (controller == 'products' && controller_name == 'products') %>
       <article class='nav-text active-link'>
-        <p>
         <article class='nav-icon'>
           <i class="<%= icon %>"></i>
         </article>
-        <%= text %>
+        <p>
+          <%= text %>
         </p>
       </article>
     <% else %>
       <article class='nav-text'>
-        <p>
         <article class='nav-icon'>
           <i class="<%= icon %>"></i>
         </article>
-        <%= text %>
+        <p>
+          <%= text %>
         </p>
       </article>
     <% end %>
