@@ -13,6 +13,7 @@ gem 'solidus_auth_devise'
 gem 'solidus_gateway'
 gem 'solidus_braintree'
 gem 'font-awesome-rails'
+gem 'rails_12factor'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
