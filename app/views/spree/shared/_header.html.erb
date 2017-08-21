@@ -1,5 +1,7 @@
 <header id="header" class="row" data-hook>
-  <%= render 'layouts/nav_menu' %>
+  <% if current_page?('/store') %>
+    <%= render 'layouts/nav_menu' %>
+  <% end %>
   <%= render 'layouts/flash', flash: flash %>
   <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
 </header>
