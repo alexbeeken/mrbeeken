@@ -7,42 +7,52 @@
     You can choose the amount to donate per video and you can <strong>cap it per month</strong>
     so you're never donating more than you want to.
     </p>
-    <table class='table'>
-      <th>
-        <td>
-          <h3>
-            Rewards
-          </h3>
-        </td>
-        <td>
+    <section class='rewards-tables'>
+      <table class='table'>
+        <tr>
+          <th>
+            <h3>
+              One Time Rewards
+            </h3>
+          </th>
           <%= render 'layouts/reward_table_header', path: '1.png' %>
-        </td>
-        <td>
           <%= render 'layouts/reward_table_header', path: '3.png' %>
-        </td>
-        <td>
-          <%= render 'layouts/reward_table_header', path: '5.png' %>
-        </td>
-        <td>
           <%= render 'layouts/reward_table_header', path: '10.png' %>
-        </td>
-        <td>
           <%= render 'layouts/reward_table_header', path: '25.png' %>
-        </td>
-        <td>
           <%= render 'layouts/reward_table_header', path: '50.png' %>
-        </td>
-        <td>
           <%= render 'layouts/reward_table_header', path: '100.png' %>
-        </td>
-      </th>
-      <tr>
-        <td>
-          <p>
-            10% store discount
-          </p>
-        </td>
-      </tr>
-    </table>
+        </tr>
+        <%= render 'layouts/reward_row', title: 'License to Learn PDF', rewards: [true, true, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: '$10 Store Credit', rewards: [false, false, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: '$25 Store Credit', rewards: [false, false, false, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Thank You Postcard', rewards: [false, false, false, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Oval Sticker', rewards: [false, false, false, true, true, true] %>
+        <%= render 'layouts/reward_row', title: '10 Oval Stickers', rewards: [false, false, false, false, true, true] %>
+      </table>
+      <hr>
+      <table class='table'>
+        <tr>
+          <th>
+            <h3>
+              Recurring Rewards
+            </h3>
+          </th>
+          <%= render 'layouts/reward_table_header', path: '1.png' %>
+          <%= render 'layouts/reward_table_header', path: '3.png' %>
+          <%= render 'layouts/reward_table_header', path: '10.png' %>
+          <%= render 'layouts/reward_table_header', path: '25.png' %>
+          <%= render 'layouts/reward_table_header', path: '50.png' %>
+          <%= render 'layouts/reward_table_header', path: '100.png' %>
+        </tr>
+        <%= render 'layouts/reward_row', title: '10% Store Discount', rewards: [true, true, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Blooper Reels', rewards: [false, true, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Videos 1 Week Early', rewards: [false, false, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Store Codes and Sales', rewards: [false, false, false, true, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Episode Notes', rewards: [false, false, false, false, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Future Episode Discussion', rewards: [false, false, false, false, true, true] %>
+        <%= render 'layouts/reward_row', title: 'Personal Thank You Video', rewards: [false, false, false, false, false, true] %>
+        <%= render 'layouts/reward_row', title: 'Brought To You By: Your Name', rewards: [false, false, false, false, false, true] %>
+      </table>
+    </section>
   </section>
 </section>

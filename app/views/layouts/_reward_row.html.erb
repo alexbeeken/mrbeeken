@@ -1,0 +1,10 @@
+<tr>
+  <th>
+    <p>
+      <%= title %>
+    </p>
+  </th>
+  <% rewards.each do |bool| %>
+    <%= render 'layouts/check_cell', bool: bool %>
+  <% end %>
+</tr>

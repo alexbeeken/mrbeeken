@@ -83,3 +83,30 @@
     width: 300px;
   }
 }
+
+.check-box {
+  text-align: center;
+  .fa-check {
+    color: green;
+  }
+  .fa-times {
+    color: red;
+  }
+}
+
+.rewards-tables {
+  width: 100%;
+  .table {
+    width: 100%;
+    border: 2px solid black;
+    th, td, tr {
+      border: 1px solid black;
+    }
+    td {
+      text-align: center;
+      img {
+        width: 8vw;
+      }
+    }
+  }
+}
