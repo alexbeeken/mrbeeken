@@ -28,15 +28,18 @@
    width: 100%;
    .nav-links {
      padding-top: 20px;
+     float: right;
    }
    .nav-link {
      margin-right: 20px;
      float: left;
      .nav-icon {
        float: left;
+       margin-top: 5px;
        i {
          margin-left: 20px;
          margin-right: 2px;
+
          font-size: 32px;
        }
      }
@@ -50,7 +53,7 @@
        display: flex;
        flex-direction: row;
        float: left;
-
+       margin-top: 7px;
        p {
          margin: 0px;
        }
