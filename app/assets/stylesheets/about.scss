@@ -34,8 +34,12 @@
   font-size: 20px;
 }
 
-.text, .title, .videos-message, .support-message, .support-explanation, .feed {
+.title, .videos-message, .support-message, .support-explanation, .feed {
   font-family: 'Oswald';
+}
+
+.text {
+  font-family: monospace;
 }
 
 .videos {
