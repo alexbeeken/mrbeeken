@@ -1,9 +1,9 @@
 <tr>
-  <th>
+  <td class='title-cell'>
     <p>
       <%= title %>
     </p>
-  </th>
+  </td>
   <% rewards.each do |bool| %>
     <%= render 'layouts/check_cell', bool: bool %>
   <% end %>

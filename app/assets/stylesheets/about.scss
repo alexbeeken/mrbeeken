@@ -100,7 +100,17 @@
     width: 100%;
     border: 2px solid black;
     th, td, tr {
+      background-color: white;
       border: 1px solid black;
+    }
+    th {
+      font-size: 3vw;
+    }
+    .title-cell {
+      font-size: 2vw;
+    }
+    td, tr {
+      font-size: 3vw;
     }
     td {
       text-align: center;
@@ -109,4 +119,12 @@
       }
     }
   }
+}
+
+.patreon-link {
+  font-family: 'Oswald';
+}
+
+.support-answer {
+  font-family: monospace;
 }

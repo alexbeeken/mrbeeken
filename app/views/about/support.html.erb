@@ -1,12 +1,40 @@
 <section>
-  <p class='support-message'>
-     Please support me on <a href='www.patreon.com'>Patreon!</a>
-  </p>
   <section class='support-explanation'>
-    <p>
-    You can choose the amount to donate per video and you can <strong>cap it per month</strong>
-    so you're never donating more than you want to.
-    </p>
+    <h1 class='patreon-link'>
+      <a href='www.patreon.com'>
+        You can help support Mr. Beeken through Patreon!
+      </a>
+    </h1>
+      <h2>
+        Wait, what is Patreon?
+      </h2>
+      <p class='support-answer'>
+        Patreon is a website that allows online creators like me to reward you for your donation.
+        It's like kickstarter but the projects are ongoing.
+      </p>
+    <hr>
+      <h2>
+        How does it work?
+      </h2>
+      <p class='support-answer'>
+        You sign up for an account on Patreon and then make a pledge to support Mr. Beeken.
+        Mr. Beeken's Patreon is setup to charge you a pledge <strong> when a video is released </strong>.
+        This could be once a month at first but may speed up to several times a month.
+      </p>
+    <hr>
+      <h2> ...but I don't want to pay several times a month!?!</h2>
+        <p class='support-answer'>
+          You can cap your per month pledge amount at any amount you feel comfortable giving.
+          So there are no surprises when you are charged.
+        </p>
+    <hr>
+      <h2> Cool! What are your rewards?</h2>
+      <p class='support-answer'>
+        Check out my reward tiers below.
+        There are one time rewards for first time pledgers and recurring rewards that you
+        can receive each time a new video is released.
+      </p>
+    <hr>
     <section class='rewards-tables'>
       <table class='table'>
         <tr>
@@ -23,11 +51,11 @@
           <%= render 'layouts/reward_table_header', path: '100.png' %>
         </tr>
         <%= render 'layouts/reward_row', title: 'License to Learn PDF', rewards: [true, true, true, true, true, true] %>
-        <%= render 'layouts/reward_row', title: '$10 Store Credit', rewards: [false, false, true, true, true, true] %>
-        <%= render 'layouts/reward_row', title: '$25 Store Credit', rewards: [false, false, false, true, true, true] %>
+        <%= render 'layouts/reward_row', title: '+ $10 Store Credit', rewards: [false, false, true, true, true, true] %>
+        <%= render 'layouts/reward_row', title: '+ $15 Store Credit', rewards: [false, false, false, true, true, true] %>
         <%= render 'layouts/reward_row', title: 'Thank You Postcard', rewards: [false, false, false, true, true, true] %>
         <%= render 'layouts/reward_row', title: 'Oval Sticker', rewards: [false, false, false, true, true, true] %>
-        <%= render 'layouts/reward_row', title: '10 Oval Stickers', rewards: [false, false, false, false, true, true] %>
+        <%= render 'layouts/reward_row', title: '+ 10 Oval Stickers', rewards: [false, false, false, false, true, true] %>
       </table>
       <hr>
       <table class='table'>
@@ -55,4 +83,7 @@
       </table>
     </section>
   </section>
+  <h1 class='patreon-link'>
+     <a href='www.patreon.com'>Continue to Patreon and make your pledge!</a>
+  </h1>
 </section>
