@@ -85,6 +85,9 @@ body {
   width: 30%;
   float: left;
   .banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     &:hover {
       -webkit-animation: tada 1s;
       animation: tada 1s;

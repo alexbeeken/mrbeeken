@@ -125,8 +125,8 @@
       align-content: center;
       .reward-badge {
         &:hover {
-          -webkit-animation: pulse 1s;
-          animation: pulse 1s;
+          -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
         }
       }
     }
