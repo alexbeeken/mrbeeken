@@ -98,10 +98,8 @@
   width: 100%;
   .table {
     width: 100%;
-    border: 2px solid black;
     th, td, tr {
       background-color: white;
-      border: 1px solid black;
     }
     th {
       font-size: 3vw;
@@ -115,8 +113,16 @@
     td {
       text-align: center;
       img {
+        align-self: center;
         width: 8vw;
       }
+    }
+    .reward-table-header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
     }
   }
 }
@@ -127,4 +133,8 @@
 
 .support-answer {
   font-family: monospace;
+}
+
+.reward-title {
+  font-size: 1vw;
 }
