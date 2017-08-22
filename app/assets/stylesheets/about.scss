@@ -26,7 +26,15 @@
   font-size: 21px;
 }
 
-.text, .title, .videos-message, .support-message, .feed {
+.support-message {
+  font-size: 30px;
+}
+
+.support-explanation {
+  font-size: 20px;
+}
+
+.text, .title, .videos-message, .support-message, .support-explanation, .feed {
   font-family: 'Oswald';
 }
 
@@ -60,4 +68,18 @@
 }
 .post-date p {
   font-size: 13px !important;
+}
+
+.photos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo {
+  float: left;
+  img {
+    width: 300px;
+  }
 }

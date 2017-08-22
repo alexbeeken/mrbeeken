@@ -27,11 +27,45 @@
  .container {
    width: 100%;
    .nav-links {
-     .nav-link {
-       p {
-       }
+     padding-top: 20px;
+   }
+   .nav-link {
+     margin-right: 20px;
+     float: left;
+     .nav-icon {
+       float: left;
        i {
+         margin-left: 20px;
+         margin-right: 2px;
+         font-size: 32px;
        }
+     }
+     i {
+       font-size: 3vw !important;
+     }
+     .nav-text {
+       font-family: 'Oswald', cursive;
+       font-size: 3vw;
+       color: black;
+       display: flex;
+       flex-direction: row;
+       float: left;
+
+       p {
+         margin: 0px;
+       }
+       &:hover {
+         text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+       }
+     }
+     .active-link {
+       text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+     }
+     .cart {
+       float: left;
+     }
+     a {
+       text-decoration: none;
      }
    }
  }

@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require font-awesome
+ *= require animate
  */
 
 body {
@@ -84,7 +85,10 @@ body {
   width: 30%;
   float: left;
   .banner {
-    overflow: hidden;
+    &:hover {
+      -webkit-animation: tada 1s;
+      animation: tada 1s;
+    }
     svg {
       width: 100%;
       height: auto;
