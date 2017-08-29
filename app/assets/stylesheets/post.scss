@@ -1,7 +1,10 @@
-.post {
+.post-preview {
   background-color: white;
   border-radius: 5px;
   padding: 20px;
+  &:hover {
+    box-shadow: 2.5px 2.5px 2.5px 2.5px #969696;
+  }
 }
 .post-body p {
   font-size: 18px !important;

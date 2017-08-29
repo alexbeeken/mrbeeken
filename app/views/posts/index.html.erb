@@ -1,11 +1,14 @@
 <section class='feed'>
+  <section class='page-title'>
+    <h1>News and Updates</h1>
+  </section>
   <% @posts.each do |post| %>
     <article class='post-preview jumbotron'>
-        <section class='post-title'>
-          <a href=<%= 'news/' + post.id.to_s %>
-            <h2><strong><%= post.title %></strong></h2>
-          </a>
-        </section>
+      <section class='post-title'>
+        <a href=<%= 'news/' + post.id.to_s %>
+          <h2><strong><%= post.title %></strong></h2>
+        </a>
+      </section>
       <hr>
       <section class='post-date'>
         <p><%= post.display_time %></p>
