@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/videos', to: 'about#videos'
   get '/support', to: 'about#support'
   get '/news', to: 'about#news'
+  get '/news/:id', to: 'posts#show'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

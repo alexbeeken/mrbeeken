@@ -168,3 +168,20 @@
     box-shadow: 2px 2px #afafaf;
   }
 }
+
+.post-title {
+  font-size: 30px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.post {
+  .title {
+
+  }
+  .date {
+    color: #7f7f7f;
+    text-align: center;
+  }
+}

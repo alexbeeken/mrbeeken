@@ -10,5 +10,6 @@ class AboutController < ApplicationController
   end
 
   def news
+    @posts = Post.all
   end
 end
