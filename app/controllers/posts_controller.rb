@@ -19,7 +19,11 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    @post.update(post_params)
+    @post.update(
+      title: post_params[:title],
+      summary: post_params[:summary],
+      content: post_params[:content]
+    )
     redirect_to ENV['SECRET_URL'] + '/' + @post.id.to_s + '/edit'
   end
 
