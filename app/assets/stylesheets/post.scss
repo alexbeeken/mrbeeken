@@ -29,3 +29,21 @@
     text-align: center;
   }
 }
+
+.edit-form {
+  width: 100%;
+  text-align: center;
+  .edit-title {
+    width: 50%;
+    margin: 10px;
+  }
+  .edit-summary {
+    width: 50%;
+    margin: 10px;
+  }
+  .edit-content {
+    width: 50%;
+    height: 800px;
+    margin: 10px;
+  }
+}

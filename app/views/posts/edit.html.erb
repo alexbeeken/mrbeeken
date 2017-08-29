@@ -1,0 +1,23 @@
+<section class='edit-form'>
+  <%= form_tag(ENV['SECRET_URL'] + @post.id.to_s + '/update') do |f| %>
+    <%= text_field_tag(:title, @post.title, class: 'edit-title') %>
+    <br>
+    <%= text_field_tag(:summary, @post.summary, class: 'edit-summary') %>
+    <br>
+    <%= text_area_tag(:content, @post.content, class: 'edit-content') %>
+    <br>
+    <%= submit_tag 'Update' %>
+  <% end %>
+  <%= form_tag(ENV['SECRET_URL'] + @post.id.to_s + '/delete') do |f| %>
+    <%= submit_tag 'DELETE POST', data: { confirm: 'Are you sure?' } %>
+  <% end %>
+</section>
+
+<section class='menu'>
+  <% @posts.each do |post| %>
+    <%= link_to (post.title || post.id.to_s), root_url + ENV['SECRET_URL'] + '/' + post.id.to_s + '/edit' %>
+    <br>
+  <% end %>
+</section>
+
+<%= link_to ('New Post'), :new_post %>
