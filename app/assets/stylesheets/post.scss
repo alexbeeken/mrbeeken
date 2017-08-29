@@ -22,11 +22,16 @@
 
 .post {
   .title {
-
+    margin: 30px;
   }
-  .date {
+  .timestamp {
     color: #7f7f7f;
     text-align: center;
+  }
+  .content {
+    margin: 30px 1vw;
+    font-size: 18px;
+    font-family: 'Merriweather';
   }
 }
 
