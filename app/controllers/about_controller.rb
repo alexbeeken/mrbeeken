@@ -1,5 +1,4 @@
 class AboutController < ApplicationController
-
   def me
   end
 
@@ -7,9 +6,5 @@ class AboutController < ApplicationController
   end
 
   def support
-  end
-
-  def news
-    @posts = Post.all
   end
 end

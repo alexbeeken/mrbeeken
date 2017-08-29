@@ -1,6 +1,6 @@
 <section class='feed'>
   <% @posts.each do |post| %>
-    <article class='post jumbotron'>
+    <article class='post-preview jumbotron'>
         <section class='post-title'>
           <a href=<%= 'news/' + post.id.to_s %>
             <h2><strong><%= post.title %></strong></h2>
@@ -8,7 +8,7 @@
         </section>
       <hr>
       <section class='post-date'>
-        <p><%= @timestamp %></p>
+        <p><%= post.display_time %></p>
       </section>
       <section class='post-body'>
         <%= post.summary %>
