@@ -26,7 +26,7 @@ class PostsController < ApplicationController
       content: post_params[:content],
       thumbnail: post_params[:thumbnail]
     )
-    redirect_to ENV['SECRET_URL'] + '/' + @post.id.to_s + '/edit'
+    redirect_to '/' + ENV['SECRET_URL'] + '/' + @post.id.to_s + '/edit'
   end
 
   def create
