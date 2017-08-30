@@ -48,6 +48,9 @@
 .post-preview {
   .post-descriptions {
     .post-title {
+      a {
+        text-decoration: none;
+      }
       font-size: 3vw;
     }
     .post-date {
