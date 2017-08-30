@@ -47,7 +47,6 @@
 
 .post-preview {
   .post-descriptions {
-    margin-left: 1vw;
     .post-title {
       font-size: 3vw;
     }
@@ -63,10 +62,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 1vw;
     img {
       width: 100%;
       height: auto;
-      max-height: 100%;
+      border-radius: 1vw;
     }
   }
   &:hover {
