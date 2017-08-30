@@ -1,7 +1,12 @@
 <section class='edit-form'>
   <%= form_tag(root_url + ENV['SECRET_URL'] + '/' + @post.id.to_s + '/update') do |f| %>
+    <%= label_tag 'Title' %>
     <%= text_field_tag(:title, @post.title, class: 'edit-title') %>
     <br>
+    <%= label_tag 'Image name' %>
+    <%= text_field_tag(:thumbnail, @post.thumbnail, class: 'edit-thumbnail') %>
+    <br>
+    <%= label_tag 'Summary' %>
     <%= text_field_tag(:summary, @post.summary, class: 'edit-summary') %>
     <br>
     <%= text_area_tag(:content, @post.content, class: 'edit-content') %>

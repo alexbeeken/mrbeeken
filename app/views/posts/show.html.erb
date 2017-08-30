@@ -2,6 +2,9 @@
   <section class='title'>
     <%= @post.title %>
   </section>
+  <section class='photo'>
+    <%= image_tag(@post.thumbnail) %>
+  </section>
   <section class='timestamp'>
     <%= @post.display_time  %>
   </section>

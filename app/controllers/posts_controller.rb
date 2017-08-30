@@ -9,7 +9,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all
+    @posts = Post.order(created_at: :desc).to_a
+    @featured = @posts.shift
   end
 
   def edit
@@ -22,7 +23,8 @@ class PostsController < ApplicationController
     @post.update(
       title: post_params[:title],
       summary: post_params[:summary],
-      content: post_params[:content]
+      content: post_params[:content],
+      thumbnail: post_params[:thumbnail]
     )
     redirect_to ENV['SECRET_URL'] + '/' + @post.id.to_s + '/edit'
   end
@@ -32,7 +34,8 @@ class PostsController < ApplicationController
     @post.update(
       title: post_params[:title],
       summary: post_params[:summary],
-      content: post_params[:content]
+      content: post_params[:content],
+      thumbnail: post_params[:thumbnail]
     )
     @post.save
     redirect_to root_url
@@ -47,6 +50,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.permit(:title, :summary, :content, :utf8, :authenticity_token, :commit)
+    params.permit(:title, :summary, :content, :utf8, :authenticity_token, :commit, :thumbnail)
   end
 end

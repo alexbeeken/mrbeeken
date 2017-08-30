@@ -5,24 +5,40 @@
   &:hover {
     box-shadow: 2.5px 2.5px 2.5px 2.5px #969696;
   }
-}
-.post-body p {
-  font-size: 18px !important;
-}
-.post-date p {
-  font-size: 13px !important;
+  .post-body p {
+    font-size: 18px !important;
+  }
+  .post-date p {
+    font-size: 13px !important;
+  }
+
+  .post-title {
+    font-size: 30px;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
-.post-title {
-  font-size: 30px;
-  a {
-    text-decoration: none;
+.post-thumbnail {
+  img {
+    margin-right: 20px;
+    width: 15%;
+    float: left;
+    height: 100%;
+    max-height: 140px;
+    width: auto;
   }
 }
 
 .post {
   .title {
     margin: 30px;
+  }
+  .photo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .timestamp {
     color: #7f7f7f;
@@ -50,5 +66,22 @@
     width: 50%;
     height: 800px;
     margin: 10px;
+  }
+  .edit-thumbnail {
+    width: 50%;
+    margin: 10px;
+  }
+}
+
+.featured {
+  .post-preview {
+    height: 380px;
+    .post-thumbnail {
+      img {
+        height: 100%;
+        width: 50%;
+        max-height: 100%;
+      }
+    }
   }
 }
