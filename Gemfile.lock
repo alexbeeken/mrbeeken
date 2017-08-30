@@ -245,6 +245,9 @@ GEM
     selenium-webdriver (3.5.1)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
+    shareable (1.1.4)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     solidus (2.3.0)
       solidus_api (= 2.3.0)
       solidus_backend (= 2.3.0)
@@ -378,6 +381,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
+  shareable
   solidus
   solidus_auth_devise
   solidus_braintree

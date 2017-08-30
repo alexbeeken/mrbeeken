@@ -16,6 +16,7 @@ gem 'font-awesome-rails'
 gem 'rails_12factor'
 gem 'animate-rails'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'shareable'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
