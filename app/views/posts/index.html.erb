@@ -5,42 +5,48 @@
   <section class='featured'>
     <article class='post-preview jumbotron'>
       <section class='post-thumbnail'>
-        <%= link_to image_tag(@featured.thumbnail, class: 'post-thumbnail-img'), 'news/' + @featured.id.to_s %>
+        <%= link_to image_tag(@featured.display_image, class: 'post-thumbnail-img'), 'news/' + @featured.id.to_s %>
       </section>
-      <section class='post-title'>
-        <a href=<%= 'news/' + @featured.id.to_s %>
-          <h2><strong><%= @featured.title %></strong></h2>
-        </a>
-      </section>
-      <hr>
-      <section class='post-date'>
-        <p><%= @featured.display_time %></p>
-      </section>
-      <section class='post-body'>
-        <%= @featured.summary %>
+      <section class='post-descriptions'>
+        <section class='post-title'>
+          <a href=<%= 'news/' + @featured.id.to_s %>
+            <h2><strong><%= @featured.title %></strong></h2>
+          </a>
+        </section>
+        <hr>
+        <section class='post-date'>
+          <%= @featured.display_time %>
+        </section>
+        <section class='post-summary'>
+          <%= @featured.summary %>
+        </section>
       </section>
     </article>
   </section>
   <section class='page-title'>
-    <h1>Past articles</h1>
+    <h1>Recent articles</h1>
   </section>
   <% @posts.each do |post| %>
-    <article class='post-preview jumbotron'>
-      <section class='post-thumbnail'>
-        <%= link_to image_tag(post.thumbnail, class: 'post-thumbnail-img'), 'news/' + post.id.to_s %>
-      </section>
-      <section class='post-title'>
-        <a href=<%= 'news/' + post.id.to_s %>
-          <h2><strong><%= post.title %></strong></h2>
-        </a>
-      </section>
-      <hr>
-      <section class='post-date'>
-        <p><%= post.display_time %></p>
-      </section>
-      <section class='post-body'>
-        <%= post.summary %>
-      </section>
-    </article>
+    <section class='past-articles'>
+      <article class='post-preview jumbotron'>
+        <section class='post-thumbnail'>
+          <%= link_to image_tag(post.display_image, class: 'post-thumbnail-img'), 'news/' + post.id.to_s %>
+        </section>
+        <section class='post-descriptions'>
+          <section class='post-title'>
+            <a href=<%= 'news/' + post.id.to_s %>
+              <strong><%= post.title %></strong>
+            </a>
+          </section>
+          <hr>
+          <section class='post-date'>
+            <%= post.display_time %>
+          </section>
+          <section class='post-summary'>
+            <%= post.summary %>
+          </section>
+        </section>
+      </article>
+    </section>
   <% end %>
 </section>
