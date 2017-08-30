@@ -88,5 +88,4 @@ Rails.application.configure do
 
   config.assets.compile = false
   config.serve_static_assets = true
-  config.assets.digest = true
 end
