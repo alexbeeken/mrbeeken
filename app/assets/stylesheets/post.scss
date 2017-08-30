@@ -7,9 +7,16 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .timestamp {
+  .misc-info {
     color: #7f7f7f;
-    text-align: center;
+    width: 100%;
+    float: left;
+    .timestamp {
+      float: right;
+    }
+    .author {
+      float: left;
+    }
   }
   .social {
     .social-button {
@@ -67,7 +74,7 @@
     }
     .post-summary {
       padding-top: 0.5vw;
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
   }
   .post-thumbnail {

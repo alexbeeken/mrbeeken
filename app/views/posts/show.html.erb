@@ -5,8 +5,13 @@
   <section class='photo'>
     <%= image_tag(@post.thumbnail) %>
   </section>
-  <section class='timestamp'>
-    <%= @post.display_time  %>
+  <section class='misc-info'>
+    <section class='timestamp'>
+      <%= @post.display_time  %>
+    </section>
+    <section class='author'>
+      Alex Beeken
+    </section>
   </section>
   <hr>
   <section class='content'>
