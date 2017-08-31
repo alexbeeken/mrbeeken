@@ -1,0 +1,16 @@
+.videos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .video {
+    max-height: 500px;
+    margin-bottom: 40px;
+    margin: 10px;
+  }
+}
+
+.videos-message {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}

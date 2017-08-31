@@ -1,0 +1,12 @@
+<article class='videos-message'>
+  <p>Visit my <a href='www.youtube.com'>Youtube channel</a> to see more!
+  </article>
+<section class='videos'>
+  <% @videos.each do |video| %>
+    <article class='video'>
+      <a href=<%= video.url %>>
+        <%= image_tag video.thumbnail %>
+      </a>
+    </article>
+  <% end %>
+</section>
