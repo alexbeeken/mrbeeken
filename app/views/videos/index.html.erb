@@ -3,10 +3,6 @@
   </article>
 <section class='videos'>
   <% @videos.each do |video| %>
-    <article class='video'>
-      <a href=<%= video.url %>>
-        <%= image_tag video.thumbnail %>
-      </a>
-    </article>
+    <%= render 'video_bubble', video: video %>
   <% end %>
 </section>
