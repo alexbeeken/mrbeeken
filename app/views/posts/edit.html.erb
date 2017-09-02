@@ -13,14 +13,14 @@
     <br>
     <%= submit_tag 'Update' %>
   <% end %>
-  <%= form_tag(root_url + ENV['SECRET_URL'] + @post.id.to_s + '/delete') do |f| %>
+  <%= form_tag(root_url + '/' + ENV['SECRET_URL'] + '/' + @post.id.to_s + '/delete') do |f| %>
     <%= submit_tag 'DELETE POST', data: { confirm: 'Are you sure?' } %>
   <% end %>
 </section>
 
 <section class='menu'>
   <% @posts.each do |post| %>
-    <%= link_to (post.title || post.id.to_s), root_url + ENV['SECRET_URL'] + '/' + post.id.to_s + '/edit' %>
+    <%= link_to (post.title || post.id.to_s), root_url + '/' + ENV['SECRET_URL'] + '/' + post.id.to_s + '/edit' %>
     <br>
   <% end %>
 </section>
