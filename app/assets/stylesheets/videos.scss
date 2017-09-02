@@ -3,26 +3,27 @@
   display: flex;
   flex-wrap: wrap;
   .video {
-    height: 200px;
-    width: 200px;
+    width: 210px;
+
     margin-bottom: 40px;
     margin: 10px;
     .video-title {
       width: 100%;
-      text-align: center;
+      text-align: left;
       font-family: 'Merriweather';
-      font-size: 25px;
+      font-size: 15px;
+      font-weight: bold;
     }
     .video-thumbnail {
-      height: 100px;
-      width: 200px;
+      width: 100%;
       text-align: center;
       img {
-        height: 100px;
+        height: 117.5px;
+        width: 100%;
       }
     }
     &:hover {
-      box-shadow: 2.5px 2.5px 2.5px 2.5px #969696;
+      box-shadow: 0px 0px 1px 1px #969696;
     }
   }
 }
