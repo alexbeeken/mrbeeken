@@ -2,16 +2,16 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   .video {
     width: 210px;
-
-    margin-bottom: 40px;
     margin: 10px;
     .video-title {
       width: 100%;
       text-align: left;
       font-family: 'Merriweather';
-      font-size: 15px;
+      font-size: 13px;
       font-weight: bold;
     }
     .video-thumbnail {
@@ -31,7 +31,7 @@
 .videos-message {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .videos-message {
