@@ -3,7 +3,7 @@
     <%= @post.title %>
   </section>
   <section class='photo'>
-    <%= image_tag(@post.thumbnail) %>
+    <%= image_tag(@post.display_image) %>
   </section>
   <section class='misc-info'>
     <section class='timestamp'>
@@ -30,5 +30,8 @@
     <section class='social-button'>
       <%= google_plus_button %>
     </section>
+  </section>
+  <section class='email'>
+    Feel free to share your thoughts on this subject or anything else by emailing me at musiccramsessions@gmail.com.
   </section>
 </section>

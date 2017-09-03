@@ -9,15 +9,14 @@ Rails.application.routes.draw do
   root to: 'posts#index'
   mount Spree::Core::Engine, at: '/store'
   get '/about', to: 'about#me'
-  get '/videos', to: 'about#videos'
   get '/support', to: 'about#support'
   get '/news', to: 'posts#index'
   get '/news/:id', to: 'posts#show'
+  get '/videos', to: 'videos#index'
+
   get ENV['SECRET_URL'] + '/:id' + '/edit', to: 'posts#edit'
   post ENV['SECRET_URL'] + '/:id' + '/update', to: 'posts#update'
   post ENV['SECRET_URL'] + '/:id' + '/delete', to: 'posts#delete', as: :delete_post
   post ENV['SECRET_URL'] + '/create', to: 'posts#create', as: :create_post
   get ENV['SECRET_URL'] + '/new', to: 'posts#new', as: :new_post
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

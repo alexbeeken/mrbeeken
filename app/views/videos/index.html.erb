@@ -1,0 +1,8 @@
+<article class='videos-message'>
+  <p>Visit my <a href='www.youtube.com'>Youtube channel</a> to see more!
+  </article>
+<section class='videos'>
+  <% @videos.each do |video| %>
+    <%= render 'video_bubble', video: video %>
+  <% end %>
+</section>
