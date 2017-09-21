@@ -1,7 +1,21 @@
-<section class='feed'>
+<section class='page-header'>
   <section class='page-title'>
     <h1>Featured Post</h1>
   </section>
+</section>
+<section class='email-subscription-form jumbotron'>
+  <section class='email-label'>
+    <h3>Join the mailing list!</h3>
+  </section>
+  <%= form_tag(subscribe_path, method: 'post') do |f| %>
+    <%= label_tag 'Email' %>
+    <%= email_field_tag(:email, '', class: 'email-form', placeholder: 'your@email.com') %>
+    <section class='submit-button'>
+      <%= submit_tag 'Subscribe' %>
+    </section>
+  <% end %>
+</section>
+<section class='feed'>
   <section class='featured'>
     <article class='post-preview jumbotron'>
       <section class='post-thumbnail'>

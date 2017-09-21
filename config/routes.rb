@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/news', to: 'posts#index'
   get '/news/:id', to: 'posts#show'
   get '/videos', to: 'videos#index'
+  post '/subscribe', to: 'email#subscribe'
+  post '/unsubscribe', to: 'email#unsubscribe'
 
   get ENV['SECRET_URL'] + '/:id' + '/edit', to: 'posts#edit'
   post ENV['SECRET_URL'] + '/:id' + '/update', to: 'posts#update'

@@ -110,6 +110,7 @@
       align-items: center;
       height: 5vw;
       text-align: center;
+      font-size: 2vw;
     }
     .post-descriptions {
       width: 70%;
@@ -131,11 +132,12 @@
 
 .past-articles {
   margin: 2vw 0px;
+  width: 66%;
   .post-preview {
     height: 10vw;
     .post-descriptions {
-      width: 80%;
-      float: left;
+      float: right;
+      width: 67%;
       .post-title {
         font-size: 2vw;
       }
@@ -147,6 +149,7 @@
       }
     }
     .post-thumbnail {
+      margin-left: 2vw;
       width: 17%;
       float: left;
       img {
@@ -154,6 +157,44 @@
         height: 10vw;
         width: auto;
       }
+    }
+  }
+}
+
+.page-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title {
+  width: 50%;
+}
+
+.email-subscription-form {
+  font-size: 1vw;
+  width: 30%;
+  height: 6vw;
+  float: right;
+  .email-label {
+    width: 100%;
+  }
+  .jumbotron {
+    margin: 0px;
+  }
+  &:hover {
+    box-shadow: 2.5px 2.5px 2.5px 2.5px #969696;
+  }
+  input {
+    font-size: 1vw;
+    width: 10vw;
+  }
+  .submit-button {
+    float: right;
+    font-size: 1vw;
+    input {
+      float: right;
+      width: 8vw;
     }
   }
 }
