@@ -37,9 +37,11 @@
       </section>
     </article>
   </section>
-  <section class='page-title'>
-    <h1>Recent Posts</h1>
-  </section>
+  <% if @posts %>
+    <section class='page-title'>
+      <h1>Recent Posts</h1>
+    </section>
+  <% end %>
   <% @posts.each do |post| %>
     <section class='past-articles'>
       <article class='post-preview jumbotron'>
