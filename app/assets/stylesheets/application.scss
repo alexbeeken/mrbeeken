@@ -47,54 +47,6 @@ body {
   src: asset_url('fonts/Meera_Inimai/MeeraInimai-Regular.ttf') format('truetype');
 }
 
- @media only screen and (max-width: 1350px) {
-   .nav-links {
-     float: left !important;
-   }
- }
-
-@media only screen and (max-width: 491px) {
-  .navbar {
-    height: 28vw !important;
-  }
-  .nav-header {
-    width: 100% !important;
-    float: left;
-    .banner {
-      width: 100%;
-      svg {
-        width: 100%;
-        height: auto;
-        float: left;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 579px) {
-  .nav-link {
-    font-size: 8px !important;
-    .nav-text {
-      font-size: 13px;
-    }
-  }
-  .nav-links {
-    width: 100% !important;
-    padding-left: 0px !important;
-    padding-top: 0px !important;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .nav-mover {
-    float: left;
-  }
-  .nav-icon {
-    i {
-      font-size: 20px;
-    }
-  }
-}
-
 .nav-text {
   font-family: 'Oswald', cursive;
   font-size: 3vw;
@@ -108,13 +60,14 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
     &:hover {
       -webkit-animation: pulse 1s;
       animation: pulse 1s;
     }
     svg {
       width: 100%;
-      height: auto;
+      height: 100%;
       float: left;
     }
   }
