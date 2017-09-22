@@ -10,7 +10,7 @@ class EmailController < ApplicationController
 
   def unsubscribe
     begin
-      email = Email.where(email: params["email"]).delete!
+      email = Email.where(email: params["email"]).update!(unsubscribed: true)
       @message = "You have successfully unsubscribed #{email.address} from all email communication."
     rescue => e
       @message = "We're sorry, something went wrong: #{e.message}"
