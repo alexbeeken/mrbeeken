@@ -1,19 +1,19 @@
 class EmailController < ApplicationController
   def subscribe
-    begin do
-      Email.create!(email: params["email"])
-      flash[:notice] = "You have successfully subscribed!"
-    rescue
-      flash[:alert] = "Something went wrong please try again."
+    begin
+      email = Email.create!(address: params["email"])
+      @message = "#{email}, you have successfully subscribed!"
+    rescue => e
+      @message = "Something went wrong: #{e.message}"
     end
   end
 
   def unsubscribe
-    begin do
-      Email.where(email: params["email"]).delete!
-      flash[:notice] = "You have successfully unsubscribed from all email communication."
-    rescue
-      flash[:alert] = "We're sorry, something went wrong with your request."
+    begin
+      email = Email.where(email: params["email"]).delete!
+      @message = "You have successfully unsubscribed #{email} from all email communication."
+    rescue => e
+      @message = "We're sorry, something went wrong: #{e.message}"
     end
   end
 end
