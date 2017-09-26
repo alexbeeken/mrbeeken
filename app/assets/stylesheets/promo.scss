@@ -6,7 +6,7 @@
 .promo-blurb {
   width: 100%;
   float: left;
-  margin: 5vw 0px;
+  margin: 10vw 0px;
 }
 
 .promo-blurb-left {
@@ -22,6 +22,7 @@
     font-size: 3vw;
   }
   .promo-blurb-body {
+    opacity: 0.5;
     padding: 2vw;
     font-size: 1.5vw;
   }
