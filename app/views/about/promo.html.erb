@@ -2,7 +2,7 @@
   <article class='promo-blurb'>
     <header class='promo-blurb-left'>
       <header class='promo-blurb-title'>
-        Welcome to Mr.Beeken.com!
+        Welcome!
       </header>
       <article class='promo-blurb-body'>
         Mr.Beeken is a Youtube channel that aims to teach basic music theory in a fun and practical way.
@@ -16,7 +16,7 @@
   <article class='promo-blurb'>
     <header class='promo-blurb-left'>
       <header class='promo-blurb-title'>
-        Watch and learn, folks… and laugh
+        It's Edutainment
       </header>
       <article class='promo-blurb-body'>
         Amongst a sea of boring music tutorials, Mr. Beeken’s videos are fun,
@@ -32,7 +32,7 @@
   <article class='promo-blurb'>
     <header class='promo-blurb-left'>
       <header class='promo-blurb-title'>
-        Used by teachers
+        Used by Teachers
       </header>
       <article class='promo-blurb-body'>
         Teachers are using these videos more and more in their classroom to bring humor to a traditionally difficult subject.
@@ -46,7 +46,7 @@
   <article class='promo-blurb'>
     <header class='promo-blurb-left'>
       <header class='promo-blurb-title'>
-        Intended for teens but safe for anyone
+        Safe for Work
       </header>
       <article class='promo-blurb-body'>
         There is no swearing or (inappropriately) dark themes in Mr. Beeken. However, these lessons intended for ages 12 to infinity so expect satire, sarcasm, parody and panache.
@@ -60,13 +60,26 @@
   <article class='promo-blurb'>
     <header class='promo-blurb-left'>
       <header class='promo-blurb-title'>
-        Well, check it out already!
+        So what do I do?
       </header>
       <article class='promo-blurb-body'>
+        You can read articles and behind the scenes info on the <a href='/news'>news feed</a>. You can also find links to all video lessons on the <a href='/videos'>videos page</a>!
       </article>
     </header>
-    <article class='promo-blurb-photo'>
-      <iframe src="https://www.youtube.com/embed/Qkuqjrwlkxk" frameborder="0" allowfullscreen></iframe>
+    <article class='promo-blurb-subscribe'>
+      <section class='email-subscription-form jumbotron'>
+        <section class='email-label'>
+          <h3>Please join the mailing list.</h3>
+          <p>We'll let you know first about some big plans around the corner!</p>
+        </section>
+        <%= form_tag(subscribe_path, method: 'post') do |f| %>
+          <%= label_tag 'Email' %>
+          <%= email_field_tag(:email, '', class: 'email-form', placeholder: 'your@email.com') %>
+          <section class='submit-button'>
+            <%= submit_tag 'Subscribe' %>
+          </section>
+        <% end %>
+      </section>
     </article>
   </article>
 </div>

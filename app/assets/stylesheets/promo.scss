@@ -1,6 +1,5 @@
 .promo {
   margin: 5vw;
-  font-family: 'Merriweather';
 }
 
 .promo-blurb {
@@ -12,16 +11,21 @@
 .promo-blurb-left {
   width: 50%;
   float: left;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   .promo-blurb-title {
+    font-family: 'Merriweather';
+    text-align: center;
+    width: 80%;
     padding: 2vw;
     font-size: 3vw;
   }
   .promo-blurb-body {
+    font-family: monospace;
+    text-align: center;
+    width: 80%;
     opacity: 0.5;
     padding: 2vw;
     font-size: 1.5vw;
@@ -44,5 +48,13 @@
   video {
     width: 100%;
     height: auto;
+  }
+}
+
+.promo-blurb-subscribe {
+  width: 100%;
+  margin-top: 3vw;
+  .email-subscription-form {
+    height: 10vw;
   }
 }
