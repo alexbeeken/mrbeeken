@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Solidus relies on it being the default of "spree"
 
 
-  root to: 'posts#index'
+  root to: 'about#promo'
   mount Spree::Core::Engine, at: '/store'
   get '/about', to: 'about#me'
   get '/support', to: 'about#support'
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/videos', to: 'videos#index'
   post '/subscribe', to: 'email#subscribe'
   post '/unsubscribe', to: 'email#unsubscribe'
+  post '/promo', to: 'about#promo'
 
   get ENV['SECRET_URL'] + '/:id' + '/edit', to: 'posts#edit'
   post ENV['SECRET_URL'] + '/:id' + '/update', to: 'posts#update'

@@ -7,4 +7,7 @@ class AboutController < ApplicationController
 
   def support
   end
+
+  def promo
+  end
 end
