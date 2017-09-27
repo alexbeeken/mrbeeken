@@ -1,6 +1,13 @@
-<head>
-  <meta property="og:image" content=<%= image_url(@post.display_image) %> />
-</head>
+<% set_meta_tags og: {
+  image: image_url(@post.display_image),
+  title: @post.title,
+  description: @post.summary,
+  site_name: 'mrbeeken'
+  } %>
+
+<% if @post.audio %>
+  <% set_meta_tags og: { audio: @post.audio } %>
+<% end %>
 
 <section class='post'>
   <section class='title'>
