@@ -9,6 +9,9 @@
     <%= label_tag 'Summary' %>
     <%= text_field_tag(:summary, @post.summary, class: 'edit-summary') %>
     <br>
+    <%= label_tag 'Audio File Name' %>
+    <%= text_area_tag(:audio, @post.audio, class: 'edit-audio') %>
+    <br>
     <%= text_area_tag(:content, @post.content, class: 'edit-content') %>
     <br>
     <%= submit_tag 'Update' %>

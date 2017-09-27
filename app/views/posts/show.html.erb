@@ -9,6 +9,15 @@
   <section class='photo'>
     <%= image_tag(@post.display_image) %>
   </section>
+  <% if @post.audio %>
+    <section class='audio'>
+      <p>Listen to an audio recording of this article</p>
+      <audio controls>
+        <source src=<%= asset_path(@post.audio) %> type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  <% end %>
   <section class='misc-info'>
     <section class='timestamp'>
       <%= @post.display_time  %>

@@ -24,7 +24,8 @@ class PostsController < ApplicationController
       title: post_params[:title],
       summary: post_params[:summary],
       content: post_params[:content],
-      thumbnail: post_params[:thumbnail]
+      thumbnail: post_params[:thumbnail],
+      audio: post_params[:audio]
     )
     redirect_to '/' + ENV['SECRET_URL'] + '/' + @post.id.to_s + '/edit'
   end
@@ -35,7 +36,8 @@ class PostsController < ApplicationController
       title: post_params[:title],
       summary: post_params[:summary],
       content: post_params[:content],
-      thumbnail: post_params[:thumbnail]
+      thumbnail: post_params[:thumbnail],
+      audio: post_params[:audio]
     )
     @post.save
     redirect_to root_url
@@ -50,6 +52,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.permit(:title, :summary, :content, :utf8, :authenticity_token, :commit, :thumbnail)
+    params.permit(:title, :summary, :content, :utf8, :authenticity_token, :commit, :thumbnail, :audio)
   end
 end
