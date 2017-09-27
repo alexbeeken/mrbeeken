@@ -6,7 +6,7 @@
   } %>
 
 <% if @post.audio %>
-  <% set_meta_tags og: { audio: @post.audio } %>
+  <% set_meta_tags og: { audio: asset_url(@post.audio) } %>
 <% end %>
 
 <section class='post'>
