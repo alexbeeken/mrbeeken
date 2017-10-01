@@ -20,6 +20,7 @@ gem 'shareable'
 gem 'pry'
 gem 'turbolinks'
 gem 'meta-tags'
+gem 'kaminari'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

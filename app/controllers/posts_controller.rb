@@ -9,7 +9,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.order(created_at: :desc).to_a
+    @posts_obj = Post.page(params[:page]).order(created_at: :desc)
+    @posts = @posts_obj.to_a
     @featured = @posts.shift
   end
 
