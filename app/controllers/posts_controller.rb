@@ -9,8 +9,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.order(created_at: :desc).to_a
-    @featured = @posts.shift
+    @posts = Post.paginate(:page => params[:page]).order(created_at: :desc).to_a
+    @featured = @posts.shift if [nil, "1"].include?(params[:page])
   end
 
   def edit

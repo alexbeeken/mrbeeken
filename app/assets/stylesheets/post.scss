@@ -199,3 +199,13 @@
     }
   }
 }
+
+.pagination {
+  font-size: 1.6vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+  }
+}

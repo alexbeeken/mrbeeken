@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   root to: 'about#promo'
   mount Spree::Core::Engine, at: '/store'
-  get '/about', to: 'about#me'
+  get '/about', to: 'about#mission'
+  get '/me', to: 'about#me'
   get '/support', to: 'about#support'
   get '/news', to: 'posts#index'
   get '/news/:id', to: 'posts#show'

@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  self.per_page = 5
+
   def display_time
     created_at.strftime('%B %d %Y')
   end
